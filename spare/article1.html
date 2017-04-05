@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>技术领先</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link  href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+
+<script src="js/bootstrap.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+//Image Hover
+jQuery(document).ready(function(){
+jQuery(function() {
+	jQuery('ul.da-thumbs > li').hoverdir();
+});
+});
+</script>
+<!-- Add fancyBox main JS and CSS files -->
+<script src="../VMMD网页/js/jquery.magnific-popup.js" type="text/javascript"></script>
+<script src="js/bootstrap.js" type="text/javascript"></script>
+<link href="../VMMD网页/css/magnific-popup.css" rel="stylesheet" type="text/css">
+		<script>
+			$(document).ready(function() {
+				$('.popup-with-zoom-anim').magnificPopup({
+					type: 'inline',
+					fixedContentPos: false,
+					fixedBgPos: true,
+					overflowY: 'auto',
+					closeBtnInside: true,
+					preloader: false,
+					midClick: true,
+					removalDelay: 300,
+					mainClass: 'my-mfp-zoom-in'
+			});
+		});
+		</script>
+<!--nav-->
+<script>
+		   $(function() {
+				var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+</script>
+<style>
+a:link {
+text-decoration: none;
+}
+a:visited {
+text-decoration: none;
+}
+a:hover {
+text-decoration: none;
+}
+a:active {
+text-decoration: none;
+}
+
+</style>
+
+
+</head>
+<body>
+<div class="header_bg">
+<div class="wrap">
+	<div class="header">
+		<div class="logo">
+			<a href="index.html"><img height="26px" src="./images/logo.png" alt="" /></a>
+		</div>		
+	<div class="cssmenu">
+		<ul>
+		   <li class="active"><a href="index.html">首页</a></li>
+		   <li><a href="portfolio.html">产品信息</a>
+            <!--<ul>
+		         <li class="has-sub"><a href="portfolio.html">概述</a></li>
+		         <li class="has-sub"><a href="service.html">光学机械</a></li>
+		         <li class="has-sub"><a href="contact.html">电子系统</a></li>
+		         <li class="has-sub"><a href="staff.html">智能云端</a></li>
+		      </ul>-->
+           </li>
+           	 
+		    <li><a href="skill.html">技术领先</a>
+		      <!--<ul>
+		         <li class="has-sub"><a href="portfolio.html">TDLAS</a></li>
+		         <li class="has-sub"><a href="service.html">NIR-MIR</a></li>
+		         <li class="has-sub"><a href="contact.html">燃气检测应用技术</a></li>
+		      </ul>-->
+		   </li>
+		   <li><a href="newslist.html">新闻动态</a></li>
+		   <li><a href="job.html">关于我们</a></li>
+           <li class="last"><a href="#"><img style="width:30px;" src="images/cloud.png"></a></li>
+		 <div class="clear"></div>
+		 </ul>
+	</div>
+		<div class="clear"></div>
+		<div class="top-nav">
+		
+		</div>
+	<div class="clear"></div>
+	</div>
+</div>
+</div>
+
+<div class="header_bg2" id="secheader">
+<div class="wrap" >
+	<div class="header">
+		<div class="logo" style="color:#2b2b2b;">
+			TECH
+		</div>		
+	<div class="cssmenu">
+		<ul>
+		    <li class="active"><a href="article1.html">行业解决方案</a></li>
+		   <li><a href="article2.html">激光检测</a></li>
+		      <li><a href="article3.html">技术前瞻</a>
+		     
+		     
+		   </li>
+		     
+		   
+		 <div class="clear"></div>
+		 </ul>
+	</div>
+		
+	<div class="clear"></div>
+	</div>
+</div>
+</div>
+<!-- end header  -->
+<script> 
+var ttt = 1;
+if (ttt==1){
+	
+	$(window).scroll(function(){ 
+		if($(window).scrollTop()>=55)  {
+		//op8.src="images/1-3-0.png"; 
+			$('#secheader').addClass('isfixed');
+		}
+		else{
+			$('#secheader').removeClass('isfixed');
+		}
+	}); 
+	
+}
+</script> 
+<!-- 主干内容  -->
+<div >
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span12">
+			<div class="page-header">
+				<h1 style="text-align:center;
+	margin:0 auto;font-size:2em;font-family: Microsoft YaHei;">
+					 燃气检测技术
+				</h1>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+	
+			<div style="width:48%; height:140px; margin:0 auto;margin-top:30px; ">
+				<h1 style="font-size:1em;line-height:180%;font-family: Microsoft YaHei;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+在燃气检测领域中，从原理上划分，主要包括CRDS（光衰振荡谱），（近红外）TDLAS（可调谐二极管激光吸收光谱），NDIR（非分光红外），FID（火焰离子检测）和传统传感器（包括催化燃烧和半导体气体传感技术）。<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1、甲烷传感器是一种传统的燃气检测手段，其主要的优点是成本低，同时性能差。目前使用的传感器包括催化燃烧式和半导体式两种。催化燃烧式的响应时间一般为10秒左右，所以仅用于低端的手持和固定检测方式。半导体传感器的响应时间一般为秒级，但是由于他的选择性很差，往往需要配合其他手段使用。<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、FID具有响应速度快，灵敏度高的优点。但是由于需要氢气火焰，系统笨重，使用成本较高。且系统对灰尘较为敏感，特别是一定量的水蒸气会导致检测器电极损坏，因此，需要严格的过滤采样系统，并导致维护量提高。另外FID对所有的烃类气体均有相应，这也会给使用带来一定的问题。目前FID仅用于泵吸式车载巡检系统中，正迅速被激光所取代。<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3、NDIR具有较宽的可检测气体范围。但是其腔体极易受到灰尘等污染物的影响，因此小型NDIR检测仪的稳定性无法满足要求。目前燃气检测设备仅有美国的OMD采用了该技术。但OMD仍然存在稳定性问题，主要表现在基线漂移严重，日常维护量大等。并且对于巡检，其检测速度也难于进一步提高。<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4、TDLAS是一种气体检测新的技术，各项技术性能均有较大的优势。一方面，正在中高端产品中逐渐替代传统的传感器技术。另一方面，由于它适合多种应用形式，在遥测和高性能掠扫式车载方面也成为唯一的选择。<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5、CRDS 具有极低的检测限，可达PPB（10-9）级。由于空气中可能存在沼气（一般为几个ppm的甲烷），一般燃气泄漏检测不需要低于1ppm的检测限。
+<br><br>
+</h1>
+			</div>
+
+<div style="width:48%; height:170px; margin:0 auto; ">
+<h1 style="font-size:1em;line-height:180%;font-family: Microsoft YaHei;">
+
+<br><br>
+</h1><hr>
+</div>
+</div>
+
+
+
+        
+
+
+			
+
+
+</body>
+</html>

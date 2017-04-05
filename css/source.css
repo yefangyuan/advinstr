@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-family:'微软雅黑',serif;
+
+}
+/* filterable portfolio menu starts */
+.portfolioMenuWrapper {
+	list-style: none;
+	
+}
+.portfolioMenuWrapper li {
+	float: left;
+	padding-left: 0px;
+	padding-right: 15px;
+	background: url(../ke01_img/portfolioFilterableMenuDecoBg.png) right center no-repeat;
+	margin-right: 9px;
+	margin-bottom: 4px;
+}
+.portfolioMenuWrapper > li:last-child {
+	background: none;
+	margin-right: 0px;
+}
+.portfolioMenuWrapper li a {
+	color: #999;
+}
+.portfolioMenuWrapper li a:hover {
+	text-decoration: none;
+}
+.portfolioMenuWrapper .currentPortfolioFilter {
+	color: #17baef;
+}
+/* filterable portfolio menu ends */
+
+.portfolioOneFilterableWrapper {
+	padding-left: 24px;
+	padding-right: 24px;
+}
+.portfolioOneFilterableWrapper .portfolioFilterableItemWrapper {
+	margin-bottom: 36px;
+	box-shadow: 0px 3px 0px rgba(0,0,0,0.06);
+	border-radius: 6px;
+	background-color: #fff;
+}
+.portfolioOneFilterableWrapper .portfolioFilterableItemImageWrapper {
+	border-radius: 6px;
+}
+.portfolioOneFilterableWrapper .portfolioFilterableItemImageWrapper img {
+	width: 100%;
+	height: auto;
+	border-radius: 6px;
+}
+.portfolioOneFilterableWrapper .portfolioFilterableItemInfoWrapper {
+	background-color: #fff;
+	padding-top: 21px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-bottom: 22px;
+}
+.portfolioOneFilterableWrapper .portfolioFilterableItemInfoWrapper > *:last-child {
+	margin-bottom: 0px;
+}
+.portfolioOneFilterableWrapper .portfolioFilterableItemTitle {
+	margin-bottom: 16px;
+	height: 18px;
+	padding-bottom: 0px;
+}
+
+.portfolioOneFilterableWrapper .portfolioFilterableItemImageWrapper {
+	border-radius: 6px;
+}
+.portfolioOneFilterableWrapper .portfolioFilterableItemImageWrapper img {
+	width: 100%;
+	height: auto;
+	border-radius: 6px;
+}
+
+.portfolioOneFilterableWrapper .portfolioFilterableItemInfoWrapper {
+	background-color: #fff;
+	padding-top: 21px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-bottom: 22px;
+}
+.portfolioOneFilterableWrapper .portfolioFilterableItemInfoWrapper > *:last-child {
+	margin-bottom: 0px;
+}
+
+.portfolioOneFilterableWrapper .portfolioFilterableItemTitle {
+	margin-bottom: 16px;
+	height: 18px;
+	padding-bottom: 0px;
+}
+
+.portfolioFilterableItemButtonsWrapper {
+	height: 36px;
+	line-height: 36px;
+	background-color: #f6f6f6;
+}
+
+.portfolioFilterableDetailsButton {
+	height: 36px;
+	line-height: 36px;
+	float: right;
+	padding-right: 40px;
+	color: #666;
+	background: #f0f0f0 url(../ke01_img/portfolioDetailsButtonBg.png) right center no-repeat;
+	padding-left: 12px;
+}
+.portfolioFilterableExpandButton:hover, .portfolioFilterableDetailsButton:hover {
+	text-decoration: none;
+}
+
+.ask-list{margin-bottom:-1px;overflow:hidden}
+.ask-list li{margin-left:-1px;border-bottom:1px solid #ebedee}
+.ask-list li a{display:block;overflow:hidden;
+	text-decoration:none;
+}
+.ask-list li h4{line-height:24px;margin-bottom:5px}
+.ask-list li p{line-height:20px;color:#868b98;font-size:14px;margin-bottom:5px;max-height:60px;overflow:hidden}
+.ask-list li .ask-descrip{display:block;float:right;color:#b3b6bd;font-size:14px}

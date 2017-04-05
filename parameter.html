@@ -1,0 +1,669 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>产品信息-参数/下载</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="./css/style.css" rel="stylesheet" type="text/css" media="all" />
+<style type="text/css">
+
+<!--
+
+.mouseBeOffMe {
+border-top:    0px  solid #ffffff; 
+border-bottom: 5px  solid #ffffff; 
+border-left:   0px   solid #ffffff; 
+border-right:  0px  solid #ffffff; 
+}
+
+.mouseBeOnMe {
+border-top:    4px   solid #ffffff;
+border-bottom: 1px  solid #ffffff; 
+border-left:   0px  solid #ffffff; 
+border-right:  0px   solid #ffffff;
+}
+
+.mouseBeDown {
+border-top:    5px  solid #ffffff;
+border-bottom: 0px   solid #ffffff; 
+border-left:   0px  solid #ffffff; 
+border-right:  0px   solid #ffffff;
+}
+
+.mouseBeUp {
+border-top:    0px  solid #ffffff;
+border-bottom: 5px  solid #ffffff; 
+border-left:   0px  solid #ffffff; 
+border-right:  0px   solid #ffffff;
+}
+ul.ppp{position:relative;} 
+ul.ppp li{display:block; position:absolute; left:0; top:0} 
+ul.aa{position:relative;} 
+ul.aa li{display:block; position:absolute; left:0; top:0} 
+
+
+
+</style>
+
+
+<!--滚动数字-->
+
+<link rel="stylesheet" type="text/css" href="css/base.css">
+
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/countUp.min.js"></script>
+<!--end-->
+
+<!--nav-->
+<script src="./js/jquery.min.js"></script>
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+</script>
+<!-- Add fancyBox main JS and CSS files -->
+<script src="./js/jquery.magnific-popup.js" type="text/javascript"></script>
+<link href="./css/magnific-popup.css" rel="stylesheet" type="text/css">
+		<script>
+			$(document).ready(function() {
+				$('.popup-with-zoom-anim').magnificPopup({
+					type: 'inline',
+					fixedContentPos: false,
+					fixedBgPos: true,
+					overflowY: 'auto',
+					closeBtnInside: true,
+					preloader: false,
+					midClick: true,
+					removalDelay: 300,
+					mainClass: 'my-mfp-zoom-in'
+			});
+		});
+		</script>
+</head>
+<body>
+
+<div class="header_bg">
+<div class="wrap">
+	<div class="header">
+		<div class="logo">
+			<a href="index.html"><img height="26px" src="./images/logo.png" alt="" /></a>
+		</div>		
+	<div class="cssmenu">
+		<ul>
+		   <li><a href="index.html">首页</a></li>
+		   <li class="active"><a href="portfolio.html">产品信息</a></li>
+		    <li><a href="portfolio.html">技术领先</a></li>
+		     <li><a href="newslist.html">新闻动态</a></li>
+		   <li class="last"><a href="job.html">关于我们</a></li>
+           <li><a href="#"><img style="width:30px;" src="images/cloud.png"></a></li>
+		 <div class="clear"></div>
+		 </ul>
+	</div>
+		<div class="top-nav">
+		<nav class="clearfix">
+				<ul>
+					   <li><a href="index.html">首页</a></li>
+					   <li><a href="portfolio.html">产品信息</a></li>
+					   <li><a href="skill.html">技术领先</a></li>
+					    <li><a href="newslist.html">新闻动态</a></li>
+		   				<li><a href="job.html">关于我们</a></li>
+					 
+					  <li class="last"><a href="job.html">关于我们</a></li>
+                      <li><a href="#"><img style="width:30px;" src="images/cloud.png"></a></li>
+				</ul>
+				<a href="#" id="pull">菜单</a>
+			</nav>
+		</div>
+	<div class="clear"></div>
+	</div>
+</div>
+</div>
+
+
+
+<div class="header_bg2" id="secheader">
+<div class="wrap" >
+	<div class="header">
+		<div class="logo" style="color:#000;">
+			<b>VMMD</b>
+		</div>		
+	<div class="cssmenu">
+		<ul>
+		   <li><a href="portfolio.html">介绍</a></li>
+		   <li class="active" id="lipara"><a href="parameter.html">参数</a></li>
+		    <li id="lidown"><a href="parameter.html#download">下载</a> </li>
+		     <li><a href="contract.html">联系试用</a></li>
+		   
+		 <div class="clear"></div>
+		 </ul>
+	</div>
+
+		
+	<div class="clear"></div>
+	</div>
+</div>
+</div>
+<script> 
+var ttt = 1;
+if (ttt==1){
+	
+	$(window).scroll(function(){ 
+		if($(window).scrollTop()>=1400)  {
+		//op8.src="images/1-3-0.png"; 
+			$('#lidown').addClass('active');
+			$('#lipara').removeClass('active');
+		}
+		else{
+			$('#lidown').removeClass('active');
+			$('#lipara').addClass('active');
+		}
+	}); 
+}
+
+</script> 
+
+<!-- content -->
+<div style="width:60%; height:100%; margin:0 auto;font-family: Microsoft YaHei;">
+<!--标题-->
+
+
+		
+			<div class="page-header">
+				<h1 style="text-align:center;
+	margin:0 auto;font-size:1.8em;">
+					产品参数
+				</h1>
+			</div>
+		
+	
+
+<!--标题-->
+
+<!--第一个-->
+<div class="page-header">
+		<h1 style="font-size:1.2em;">
+			VMMD：
+		</h1>
+</div>
+
+
+
+
+<div class="container" style="border-style:solid;
+  border-bottom:medium #C0BDBD;">
+<div class="row">
+  <div class="col-md-6"><div style="width:50%; height:100%;margin-top:30px; ">
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		最高巡检速度：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		检测激光功率：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		检测激光波长：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		检测范围：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		最高采样率：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		工作温度：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		工作湿度：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		静态检出限：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		工作电压：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		功   耗：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		尺寸/重量：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		&nbsp;&nbsp;&nbsp;&nbsp;
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		防尘吹扫：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		故障报警:部故障
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		用户操作：
+</h1>
+
+</div></div>
+  
+  
+  
+  
+  <div class="col-md-6"><div style="width:48%; height:100%;margin-top:30px; ">
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;font-weight:bold;">
+		40kph
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		3mW
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		1650nm
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		0～2000ppm
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;font-weight:bold;">
+		10sps
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		-20～50℃
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		5～100%PH（不结露）
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		1ppm（S/N=1,10sps）
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		6V～16V或10～32V：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		6～60W
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;white-space:nowrap;">
+		检测器：1500×71×128mm,4.5kg;
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;white-space:nowrap;">
+		控制机：220×390×121mm,8.2kg
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		有
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;white-space:nowrap;">
+		数据连接故障，光路遮挡，气路堵塞（不包括VMMD-s），供电故障，内部故障
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;white-space:nowrap;">
+		基于GIS的图形化操作系统界面，支持云端信息系统
+</h1>
+</div></div>
+
+</div>
+</div>
+
+<!--第一个-->
+
+<!--第2个-->
+<div class="page-header">
+		<h1 style="font-size:1.2em;">
+			VMMD-pro：
+		</h1>
+</div>
+
+
+
+
+<div class="container" style="border-style:solid;
+  border-bottom:medium #C0BDBD;">
+<div class="row">
+  <div class="col-md-6"><div style="width:50%; height:100%;margin-top:30px; ">
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		最高巡检速度：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		检测激光功率：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		检测激光波长：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		检测范围：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		最高采样率：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		工作温度：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		工作湿度：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		静态检出限：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		工作电压：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		功   耗：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		尺寸/重量：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		&nbsp;&nbsp;&nbsp;&nbsp;
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		防尘吹扫：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		故障报警:部故障
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		用户操作：
+</h1>
+
+</div></div>
+  
+  
+  
+  
+  <div class="col-md-6"><div style="width:48%; height:100%;margin-top:30px; ">
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;font-weight:bold;">
+		100kph
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		3mW
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		1650nm
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		0～2000ppm
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;font-weight:bold;">
+		40sps
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		-20～50℃
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		5～100%PH（不结露）
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		1ppm（S/N=1,10sps）
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		6V～16V或10～32V：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		6～60W
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;white-space:nowrap;">
+		检测器：1500×71×128mm,4.5kg;
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;white-space:nowrap;">
+		控制机：220×390×121mm,8.2kg
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		有
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;white-space:nowrap;">
+		数据连接故障，光路遮挡，气路堵塞（不包括VMMD-s），供电故障，内部故障
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;white-space:nowrap;">
+		基于GIS的图形化操作系统界面，支持云端信息系统
+</h1>
+</div></div>
+
+</div>
+</div>
+
+
+<!--第2个-->
+
+
+
+
+
+<!--第3个-->
+<div class="page-header">
+		<h1 style="font-size:1.2em;">
+			VMMD-s：
+		</h1>
+</div>
+
+
+
+
+<div class="container" style="border-style:solid;
+  border-bottom:medium #C0BDBD;">
+<div class="row">
+  <div class="col-md-6"><div style="width:50%; height:100%;margin-top:30px; ">
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		最高巡检速度：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		检测激光功率：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		检测激光波长：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		检测范围：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		最高采样率：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		工作温度：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		工作湿度：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		静态检出限：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		工作电压：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		功   耗：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		尺寸/重量：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		&nbsp;&nbsp;&nbsp;&nbsp;
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		防尘吹扫：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		故障报警:部故障
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		用户操作：
+</h1>
+
+</div></div>
+  
+  
+  
+  
+  <div class="col-md-6"><div style="width:48%; height:100%;margin-top:30px; ">
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;font-weight:bold;">
+		20kps
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		3mW
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		1650nm
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		0～2000ppm
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;font-weight:bold;">
+		5sps
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		-20～50℃
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		5～100%PH（不结露）
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		1ppm（S/N=1,5sps）
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		18～55V：
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		1.5～4W
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;white-space:nowrap;">
+		检测器：750×71×128mm,3.5kg;
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;white-space:nowrap;">
+		控制机：150×100×30mm,0.2kg
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;">
+		无
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;white-space:nowrap;">
+		数据连接故障，光路遮挡，气路堵塞（不包括VMMD-s），供电故障，内部故障
+</h1>
+<h1 style="font-size:1em;line-height:200%;font-family: Microsoft YaHei;white-space:nowrap;">
+		基于GIS的图形化操作系统界面，支持云端信息系统
+</h1>
+</div></div>
+
+</div>
+</div>
+
+
+<!--第3个-->
+
+<div class="page-header">
+		
+</div>
+<!--参数结束-->
+
+<div  style="text-align:center;margin:0 auto;font-size:1.8em; border-bottom:1px solid #BFBFBF;padding-bottom:10px;margin-bottom:10px;" id="download">
+<h1 >
+下载内容
+</h1>
+	</div>
+	
+
+
+<div class="container" style="text-align:center;margin:0 auto;width:100%;padding-bottom:30px;border-bottom:#C0BDBD solid 1px;">
+<div class="row">
+  <div class="col-md-4" >
+  <img src="images/下载logo图.png" style="width:210px;height:160px;border-bottom:#C0BDBD solid 1px;">
+  <div class="col-md-12"><h4 style="border-bottom:#C0BDBD solid 1px;text-align:center;margin:0 auto;width:100%;">VMMD 宣传页更新 2015-12-6
+ <hr>
+  <small >本文件更新了产品VMMD宣传方面的内容，让用户更好地了解产品的性能。</small><br><a href="#" >下载</a><hr></h4>
+  
+  </div>
+  </div>
+  
+  <div class="col-md-4">
+  <img src="images/下载logo图2.png" style="width:210px;height:160px;border-bottom:#C0BDBD solid 1px;">
+  <div class="col-md-12"><h4 style="border-bottom:#C0BDBD solid 1px;text-align:center;margin:0 auto;width:100%;">ABMD 宣传页更新 2015-12-6
+  <hr>
+   <small >本文件更新了产品ABMD宣传方面的内容，让用户更好地了解产品的性能。</small><br><a href="#" >下载</a><hr></h4>
+  </div></div>
+  
+  <div class="col-md-4">
+  <img src="images/下载logo图.png" style="width:210px;height:160px;border-bottom:#C0BDBD solid 1px;">
+  <div class="col-md-12"><h4 style="border-bottom:#C0BDBD solid 1px;text-align:center;margin:0 auto;width:100%;">VMMD 宣传页更新 2015-12-6
+  <hr>
+   <small >本文件更新了产品VMMD宣传方面的内容，让用户更好地了解产品的性能。</small><br><a href="#" >下载</a><hr></h4>
+  </div></div>
+  
+</div>
+</div>
+
+<!--<div class="contact" id="contact" >
+		
+			<div class="contact-top">
+				<img src="images/spl.png" alt="" style="text-align:center;margin:0 auto;"/>
+				<h3>联系我们</h3>
+				<p style="font-size:0.6em;">恒晋仪器有限公司，如果您想了解关于VMMD产品的详细内容和技术方面的信息，可以联系我们。</p>
+			</div>
+			<div class="contact-bottom">
+				<input type="text" value="您的姓名" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Your Name';}"/>
+				<input type="text" value="您的邮件地址" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Your Email';}"/>
+				<textarea value="消息内容" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '消息内容';}">消息内容
+                </textarea>
+				<div class="contact-but">
+							<input type="submit" value="发送信息" />
+						</div>
+			</div>
+		
+	</div>-->
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<!-- content -->
+<script> 
+var ttt = 1;
+if (ttt==1){
+	
+	$(window).scroll(function(){ 
+		if($(window).scrollTop()>=55)  {
+		//op8.src="images/1-3-0.png"; 
+			$('#secheader').addClass('isfixed');
+		}
+		else{
+			$('#secheader').removeClass('isfixed');
+		}
+	}); 
+	
+	$(window).scroll(function(){ 
+		if($(window).scrollTop()>=3010)  {
+		//op8.src="images/1-3-0.png"; 
+			$('.p8').last().fadeOut(2000, function(){ 
+				$(this).show().parent().prependTo($('.aa')); 
+				ttt=0;
+			}); 
+		};
+	}); 
+}
+</script> 
+
+
+
+
+<!-- start footer  -->
+<div class="footer_bg">
+<br>
+	<div class="wrap" style="width:100%">
+              <div style="float:left;">&nbsp;&nbsp;&nbsp;&nbsp;Copyright &copy 2015 Advinstr.com All rights reserved.&nbsp;&nbsp;恒晋仪器有限公司&nbsp;&nbsp;京ICP备14047150号 </div>
+                <div style="float:right;"><img src="images/phone.png" width="16" alt=""/>&nbsp;客服热线:18500788610&nbsp;&nbsp;&nbsp;&nbsp;</div>
+	</div>
+	<div style="display:none"><script src="http://s95.cnzz.com/z_stat.php?id=1256771276&web_id=1256771276" language="JavaScript"></script>
+    <script src="../VMMD网页/js/bootstrap.js" language="JavaScript"></script>
+    </div>
+</div>
+</html>

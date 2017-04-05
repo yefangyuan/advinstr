@@ -1,0 +1,339 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>首页</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="./css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="./css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<meta name="description" content="VMMD">
+<meta name="keywords" content="VMMD">
+
+<!--滚动数字-->
+<link rel="stylesheet" type="text/css" href="css/base.css">
+
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/countUp.min.js"></script>
+<!--end-->
+
+<!--nav-->
+<script src="./js/jquery.min.js"></script>
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+</script>
+<!-- Add fancyBox main JS and CSS files -->
+<style type="text/css">
+a:link{text-decoration:none;}
+#product{
+	margin:40px auto;
+	width:90%;
+	height:380px;
+	
+}
+.ico{
+	height:150px;
+	margin:0 22%;
+}
+.ico1,.ico2,.ico3,.ico4{
+	padding-top:20px;
+	padding-bottom:20px;
+	position:relative;
+	top:-28px;
+}
+
+.ico1,.ico2,.ico3 {border-right:1px solid #7D7D7D;}
+#directory{
+	width:100%;
+	height:170px;
+	background-color:#333333;
+	padding-top:1.5%;
+}
+.directory-column {
+	float:left;
+	width:15%;
+
+	text-align:center;
+	padding-bottom:6px;
+}
+.col1{
+	margin-left:19%;
+}
+.directory-column a:link{color:#7C7C7C;}
+.directory-column a:visited{color: #7C7C7C;}
+.directory-column a:hover{color: #fff;}
+.directory-column h2{
+	font-family:"Microsoft YaHei","微软雅黑";
+	color: #7c7c7c;
+	font-size:1em;
+	margin:12px;
+}
+.directory-column li{
+	font-family:"Microsoft YaHei","微软雅黑";
+	font-size:0.8em;
+	line-height:1.4em;
+	margin:8px;
+}
+.col2{
+	padding-bottom:25px;
+}
+.clean{
+	clear:both;
+}
+
+#fwslider .progress {
+    height:4px;
+    width:0%;
+    background-color:#D92B2E;
+    float:left;
+}
+
+#fwslider .title {  /* Slider Title Style */
+	margin-left:4%;
+	text-transform: capitalize;
+	opacity: 0;
+	color: #fff;
+	font-size: 3em;
+	background:#7c151a;
+	padding: 16px 40px;
+	float: left;
+	font-style: normal;
+	font-weight: 400;
+	-webkit-text-stroke: 0px;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	-o-border-radius:4px;
+}
+#fwslider .description { /* Slider Description Style */
+	margin-left:4%;
+    opacity: 0;
+    color:#ffffff;
+    font-size:18px;
+    background:#373737;
+    padding:10px;
+    clear:both;
+    float:left;
+    margin-top:20px;
+    line-height:24px;
+    font-style: normal;
+    font-weight: 400;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	-o-border-radius:4px;
+}
+.footer_bg{
+	font-size:0.8em;
+	height:48px;
+}
+</style>
+
+<!--start slider -->
+    <link rel="stylesheet" href="./css/fwslider.css" media="all">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/fwslider.js"></script>
+<!--end slider -->
+
+</head>
+<body>
+<div class="header_bg" id="fixhead">
+<div class="wrap">
+	<div class="header">
+		<div class="logo">
+			<a href="index.html"><img height="26px" src="./images/logo.png" alt="" /></a>
+		</div>		
+	<div class="cssmenu">
+		<ul>
+		   <li class="active"><a href="index.html">首页</a></li>
+		   <li><a href="portfolio.html">产品信息</a></li>
+		    <li><a href="skill.html">技术领先</a></li>
+		     <li><a href="newslist.html">新闻动态</a></li>
+		   <li><a href="job.html">关于我们</a></li>
+           <li class="last"><a href="#"><img style="width:30px;" src="images/cloud.png"></a></li>
+		 <div class="clear"></div>
+		 </ul>
+	</div>
+		<div class="top-nav">
+			<nav class="clearfix"><!--手机部分-->
+				<ul>
+					   <li><a href="index.html">首页</a></li>
+					   <li><a href="portfolio.html">产品信息</a></li>
+					   <li><a href="skill.html">技术领先</a></li>
+					   
+					   <li><a href="newslist.html">新闻动态</a></li>
+                       <li><a href="job.html">关于我们</a></li>
+                       <li class="last"><a href="#">云端入口</a></li>
+				</ul>
+				<a href="#" id="pull">菜单</a>
+			</nav>
+		</div>
+	<div class="clear"></div>
+	</div>
+</div>
+</div>
+
+
+<div class="header_bg">
+<div class="wrap">
+	<div class="header">
+		<div class="logo">
+			<a href="index.html"><img height="26px" src="./images/logo.png" alt="" /></a>
+		</div>		
+	<div class="cssmenu">
+		<ul>
+		   <li class="active"><a href="index.html">首页</a></li>
+		   <li><a href="portfolio.html">产品信息</a></li>
+           	 
+		    <li><a href="skill.html">技术领先</a>
+		      <!--<ul>
+		         <li class="has-sub"><a href="portfolio.html">TDLAS</a></li>
+		         <li class="has-sub"><a href="service.html">NIR-MIR</a></li>
+		         <li class="has-sub"><a href="contact.html">燃气检测应用技术</a></li>
+		      </ul>-->
+		   </li>
+		   <li><a href="newslist.html">新闻动态</a></li>
+		   <li><a href="job.html">关于我们</a></li>
+            <li  class="last"><a href="#"><img style="width:30px;" src="images/cloud.png"></a></li>
+		 <div class="clear"></div>
+		 </ul>
+	</div>
+		<div class="clear"></div>
+		<div class="top-nav"></div>
+	<div class="clear"></div>
+	</div>
+</div>
+</div>
+
+<!--视频-->
+<!--<video autoplay preload="auto" poster="images/9-0.jpg"  style="width:100%; display:block;">
+       <source src="images/v.mp4"></source>
+   </video>-->
+
+   
+   
+   
+   <!-- start slider -->
+    <div id="fwslider">
+        <div class="slider_container">
+            <div class="slide"> 
+                <!-- Slide image -->
+                    <a href="#"><img  width="100%" src="./images/main1-VMMD.jpg" alt=""/> </a> 
+            <!--        <div class="slide_content">
+                    <div class="slide_content_wrap">
+                        <h4 class="title">恒晋仪器有限公司</h4>
+                        <p class="description">我们的宗旨是"坚持正确的方向，不断进取"</p>
+                    </div>
+                </div>-->
+            </div>
+            <div class="slide">
+                <a href="#"><img width="100%" src="./images/main2-MPMD.jpg" alt=""/></a>
+            </div>
+            <!--/slide -->
+          <!--    <div class="slide">
+                <a href="#"><img  width="100%" src="./images/shouye1.jpg" alt=""/></a>
+            </div>  -->
+        </div>
+        <div class="timers"></div>
+        <div class="slidePrev"><span></span></div>
+        <div class="slideNext"><span></span></div>
+    </div>     
+     
+     
+        
+  <!--产品略缩图-->
+
+<!--<div id="product">       
+
+   <div id="container" style="text-align:center;margin:auto 0;width:100%;">
+      <div class="row">
+      <div class="col-md-3"><a href="portfolio.html"><img src="images/chanpin2.jpg" alt=""/></a><p>VMMD</p></div>
+      <div class="col-md-3"><a href="portfolio.html"><img src="images/chanpin2.jpg" alt=""/></a><p>VMMD</p></div>
+      <div class="col-md-3"><a href="portfolio.html"><img src="images/chanpin2.jpg" alt=""/></a><p>VMMD</p></div>
+      <div class="col-md-3"><a href="portfolio.html"><img src="images/chanpin2.jpg" alt=""/></a><p>VMMD</p></div>
+   </div>
+</div>  
+</div> --> 
+	<div class="ico">
+      <div id="container" style="text-align:center;margin:6% auto;width:100%;">
+      <div class="row">
+      <div class="col-md-4 ico1"><a href="#"><img style="width:70%" src="images/tubiao1.png" alt=""/></a></div>
+      <div class="col-md-4 ico2"><a href="#"><img style="width:70%" src="images/tubiao2.png" alt=""/></a></div>
+      <div class="col-md-4 ico4"><a href="#"><img style="width:70%" src="images/tubiao3.png" alt=""/></a></div>
+
+      </div>
+      </div>
+      </div>
+ <!--哒哒哒-->       
+<div >            
+  <div id="directory">
+  	
+      <div class="directory-column col1">
+          <h2>产品信息</h2>
+          <ul>
+              <li><a href="portfolio.html">介绍</a></li>
+              <li><a href="parameter.html">参数</a></li>
+              <li><a href="parameter.html">下载</a></li>
+          </ul>
+      </div>
+
+      <div class="directory-column col3">
+          <h2>技术领先</h2>
+          <ul>
+              <li><a href="skill.html">行业解决方案</a></li>
+              <li><a href="skill.html">激光检测</a></li>
+              <li><a href="skill.html">技术前瞻</a></li> 
+          </ul>
+      </div>
+      <div class="directory-column col2">
+          <h2>新闻动态</h2>
+          <ul>
+              <li><a href="news.html">公司新闻</a></li>
+              <li><a href="newslist.html">行业动态</a></li>
+              <li><a href="newslist.html"></a></li>
+          
+          </ul>
+      </div>
+      <div class="directory-column col4">
+          <h2>关于我们</h2>
+          <ul>
+              <li><a href="job.html">工作机会</a></li>
+<!--              <li><a href="honor.html">荣誉资质</a></li>-->
+              <li><a href="history.html">历史沿革</a></li>
+          </ul>
+      </div>
+     <div id="clean"></div>
+     
+  </div>
+</div>
+
+<!-- start footer  -->
+
+<div class="footer_bg">
+<br>
+	<div class="wrap" style="width:100%">
+              <div style="float:left;">&nbsp;&nbsp;&nbsp;&nbsp;Copyright &copy 2015 Advinstr.com All rights reserved.&nbsp;&nbsp;恒晋仪器有限公司&nbsp;&nbsp;京ICP备14047150号 </div>
+                <div style="float:right;"><img src="images/phone.png" width="16" alt=""/>&nbsp;客服热线:18500788610&nbsp;&nbsp;&nbsp;&nbsp;</div>
+	</div>
+	<div style="display:none"><script src="http://s95.cnzz.com/z_stat.php?id=1256771276&web_id=1256771276" language="JavaScript"></script>
+    <script src="../VMMD网页/js/bootstrap.js" language="JavaScript"></script>
+    </div>
+</div>
+</body>
+</html>

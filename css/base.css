@@ -1,0 +1,82 @@
+﻿@charset "utf-8";
+/*reset css*/
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed,figure, figcaption,  hgroup,menu, nav, output, ruby, section, summary,time, mark, audio, video{margin: 0;padding: 0;border: 0;font-size: 50%;font-size: 5px;font: inherit;vertical-align: baseline;font-weight:normal;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,.footer, .header, hgroup, menu, nav, section {display: block;}
+ol, ul {list-style: none;}
+blockquote,q {quotes: none;}
+a{text-decoration: none;-moz-transition:all 200ms ease;-webkit-transition:all 200ms ease;-o-transition:all 200ms ease;transition:all 200ms ease;}
+blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+textarea,select{resize: none;font-family:微软雅黑,"黑体";}
+input{font-family:"微软雅黑","黑体";}
+/*清除浮动*/
+.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear: both;height:0;}
+.clearfix{*zoom:1;}
+.clear{ clear:both; height:0px; width:0px; line-height:0px; visibility:hidden; }
+/*定位 显示*/
+.fl{float:left; display:inline;}
+.fr{float:right; display:inline;}
+a{color:#666;}
+em,i{font-style:normal;}
+/*body{font-family:"微软雅黑";background:#fff;height:200px;}*/
+
+
+#wrapscroll
+ {
+
+font-family:"微软雅黑" ;
+color:#2b2b2b;
+ margin:100px 0;
+margin-left:6%;
+ overflow: hidden;
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+ }
+#rollnum{display: block;clear: left;position: relative;width: 100%;margin-bottom:100px;text-align:center;}
+
+#rollnum .jumbo{
+	font-size:5em;
+}
+#rollnum .jumbo1{	
+
+	font-size:2em;
+}
+#rollnum .jumbo2{	
+	font-size:2em;
+}
+div.jumbo {font-size: 5em;margin: 0;color: #7c161b;}
+.box1
+{
+	float:left;
+	margin-left:18%;
+}
+.box2
+{
+	margin-left:18%;
+	float:left;
+}
+.box3
+{
+	float:left;
+	margin-left:18%;
+}
+@media all and (max-width: 1021px) {
+	#wrapscroll {
+		width:100%;
+		padding:0 20px;
+	}
+	div.jumbo {
+		font-size:5em;
+	}
+}
+@media all and (max-width: 480px) {
+	
+	#wrapscroll {
+		padding:0 15px;
+	}
+	div.jumbo {
+		font-size:2em;
+	}
+}

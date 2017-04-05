@@ -1,0 +1,7 @@
+在CSS里面修改：
+
+1. #fwslider .sliderNext 和.sliderPrev 颜色修改为AFAFAF，透明度改为0.2
+ sliderNext span 中background-position改为95% 100%
+
+
+2.页脚 前后加空格，字体改为0.8em(在style.css里面修改)
